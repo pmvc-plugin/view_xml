@@ -11,6 +11,9 @@ class view_xml extends ViewEngine
         $this['headers']=[
             'Content-type: text/xml'
         ];
+        \PMVC\dev(function(){
+            $this['headers'] = null;
+        }, 'noxml');
     }
 
     public function process()
