@@ -13,7 +13,7 @@ class view_xml extends ViewEngine
         ];
         \PMVC\dev(function(){
             $this['headers'] = null;
-        }, 'noxml');
+        }, 'tohtml');
     }
 
     public function process()
